@@ -1,22 +1,75 @@
-.header {
-  margin: 20px;
-  background-color: #196fa2;
+.navbar {
+  position: absolute;
+  margin-top: 20px;
+  width: 100%;
+  z-index: 999;
 }
 
-.logo {
-  position: relative;
-  text-align: left;
-  left: -100px;
+h2,
+.navbar-brand {
+  padding-left: 5%;
+  font-size: 32px;
 }
-
-.login-area {
-  position: relative;
-  text-align: right;
-  left: 500px;
+.form-inline {
+  padding-right: 5%;
 }
 
 i {
   color: aliceblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#slider {
+  overflow: hidden;
+  width: 40%;
+  left: 60%;
+  position: relative;
+  height: max-content;
+}
+
+#slider figure {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  margin: 0;
+  left: 0;
+  display: flex;
+  animation: 15s slider infinite;
+  transition: all 1s ease-in-out;
+}
+
+#slider figure img {
+  width: 100%;
+  height: max-content;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 0;
+  }
+  30% {
+    left: -100%;
+  }
+  60% {
+    left: -100%;
+  }
+  65% {
+    left: -200%;
+  }
+  95% {
+    left: -200%;
+  }
+  100% {
+    left: -200%;
+  }
 }
 
 .description {

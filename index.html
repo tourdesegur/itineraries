@@ -18,20 +18,27 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row header">
-        <div class="col-6">
-          <h2 class="logo">TravelTips</h2>
-        </div>
-        <div class="col-6">
-          <span class="login-area">
+    <div class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <h2><a class="navbar-brand" href="#">TravelTips</a></h2>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto"></ul>
+          <form class="form-inline my-2 my-lg-0">
             <i class="fa-solid fa-user"></i> &zwnj; &zwnj; &zwnj;
-            <button type="signup" class="btn btn-primary btn-login">
-              Sign up
-            </button>
-          </span>
+            <button class="btn btn-primary" type="submit">Sign up</button>
+          </form>
         </div>
+      </nav>
+      <div class="slider" id="slider">
+        <figure>
+          <img src="media/vietnam.jpg" />
+          <img src="media/morocco.jpg" />
+          <img src="media/peru.jpg" />
+          <img src="media/vietnam.jpg" />
+        </figure>
       </div>
+    </div>
+    <div class="container">
       <div class="row row-main">
         <div class="col-7">
           <h1>GET YOUR ULTIMATE TRAVEL ITINERARY</h1>
@@ -71,8 +78,8 @@
             </div>
             <div class="col-4">
               <div class="card">
-                <img src="media/norway.jpg" class="card-img-nw" alt="#" />
-                <a href="#" class="btn btn-primary btn-card">Norway</a>
+                <img src="media/peru.jpg" class="card-img-nw" alt="#" />
+                <a href="#" class="btn btn-primary btn-card">Peru</a>
               </div>
             </div>
             <div class="col-4">
@@ -83,15 +90,8 @@
             </div>
           </div>
         </div>
-        <div class="col-5">
-          <div class="col-5">
-            <img
-              src="media/peru.jpg"
-              class="carousel"
-              width="600"
-              height="auto"
-            />
-          </div>
+        <div class="col-5"></div>
+      </div>
         </div>
       </div>
       <div class="container footer">
